@@ -2,7 +2,7 @@
 - name: ansible_node
   become: yes
   tasks:
-    - name: file creation
+    - name: create a file
       file: 
         path: /root/test
         state: touch
