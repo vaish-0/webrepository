@@ -1,2 +1,8 @@
 ---
-- name: test
+- name: ansible_node
+  become: yes
+  tasks:
+    - name: file creation
+      file: 
+        path: /root/test
+        state: touch
