@@ -1,5 +1,6 @@
 ---
-- name: ansible_node
+- name: file
+  hosts: ansible_client
   become: yes
   tasks:
     - name: create a file
