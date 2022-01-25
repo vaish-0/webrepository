@@ -3,7 +3,7 @@
   hosts: ansible_client
   become: yes
   tasks:
-    - name: create a file
+    - name: create file
       file: 
         path: /root/test
         state: touch
